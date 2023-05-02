@@ -39,3 +39,18 @@ function isGreater( num1, num2 ){
 isGreater( 3, 2 );
 isGreater( 2, 3 );
 isGreater( 2, 2 );
+
+// Micro Challenge #3 - Arrays
+
+//Create a function that takes in an array. Add up the first and last values in the array.
+
+// creating function to add first and last values in array
+function addEnds( array ){
+    // returns first first value in array (array[0]) added to the last value in the array,
+    // (array[array.length-1])
+    return array[0] += array[array.length-1];
+}
+
+// console logging the call of the function addEnds, which adds the first and last values
+// in the input array, so in this case adds 2 and 10 and returns 12
+console.log( 'The sum of the first and last values in the array is:', addEnds( [ 2, 4, 6, 8, 10 ] ) )
