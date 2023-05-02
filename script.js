@@ -34,6 +34,8 @@ function isGreater( num1, num2 ){
         }    
 }
 
+// calling the function with each possibility, all log correctly, 
+// remember to ask about return vs not in if/if else/else
 isGreater( 3, 2 );
 isGreater( 2, 3 );
 isGreater( 2, 2 );
