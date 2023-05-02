@@ -20,10 +20,20 @@ console.log(result);
 
 // creating function with parameters num1 and num2
 function isGreater( num1, num2 ){
+    // conditionals for states of which input is greater and if the inputs are equal
     if ( num1 > num2 ){
+        // what is the difference between having return here and leaving it out
+        // it appears to run the same either way, what circumstances would it not
         console.log( 'The first number was bigger!' );
     }
         else if ( num1 < num2 ){
-            console.log( 'The second number was bigger!')
+            console.log( 'The second number was bigger!');
+        }
+        else{
+            console.log( 'The numbers are the same!' );
         }    
 }
+
+isGreater( 3, 2 );
+isGreater( 2, 3 );
+isGreater( 2, 2 );
