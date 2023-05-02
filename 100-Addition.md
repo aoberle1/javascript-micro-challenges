@@ -9,6 +9,9 @@ Your function should return the sum of the two numbers passed in.
 ### Example 1
 
 ```js
+
+
+
 let result = yourFunction(2, 3);
 console.log(result);
 ```
