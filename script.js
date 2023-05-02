@@ -22,23 +22,33 @@ console.log(result);
 function isGreater( num1, num2 ){
     // conditionals for states of which input is greater and if the inputs are equal
     if ( num1 > num2 ){
-        // what is the difference between having return here and leaving it out
-        // it appears to run the same either way, what circumstances would it not
-        console.log( 'The first number was bigger!' );
+
+        return 'The first number was bigger!';
     }
         else if ( num1 < num2 ){
-            console.log( 'The second number was bigger!');
+            return 'The second number was bigger!';
         }
         else{
-            console.log( 'The numbers are the same!' );
+            return 'The numbers are the same!';
         }    
 }
 
-// calling the function with each possibility, all log correctly, 
-// remember to ask about return vs not in if/if else/else
-isGreater( 3, 2 );
-isGreater( 2, 3 );
-isGreater( 2, 2 );
+// calling the function with each possibility, all log correctly
+console.log( isGreater ( 3, 2 ) );
+
+console.log( isGreater ( 2, 3 ) );
+
+console.log( isGreater ( 2, 2 ) );
+
+// using example format to call function
+let resultIsGreater1 = isGreater(3, 2)
+console.log(resultIsGreater1);
+
+let resultisGreater2 = isGreater(2, 7)
+console.log(resultisGreater2);
+
+let resultIsGreater3 = isGreater(7, 7);
+console.log(resultIsGreater3);
 
 // Micro Challenge #3 - Arrays
 
@@ -53,4 +63,8 @@ function addEnds( array ){
 
 // console logging the call of the function addEnds, which adds the first and last values
 // in the input array, so in this case adds 2 and 10 and returns 12
-console.log( 'The sum of the first and last values in the array is:', addEnds( [ 2, 4, 6, 8, 10 ] ) )
+console.log( 'The sum of the first and last values in the array is:', addEnds( [ 2, 4, 6, 8, 10 ] ) );
+
+// using example format to call function and console log results
+let resultAddEnds = addEnds([1, 2, 3, 4, 5]);
+console.log(resultAddEnds);
