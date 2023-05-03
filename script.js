@@ -89,3 +89,48 @@ function partOfArray( array, number ){
 }
 
 console.log( partOfArray( [ 'Dont', 'Start', 'These', 'Three', 'Words'  ], 2 ) );
+
+let resultPartOfArray = partOfArray(["ASDF", "BLAH", "Oh!", "Hi", "There!"], 3);
+console.log(resultPartOfArray);
+
+// Micro Challenge Stretch #2 - Loops, Array of Objects
+
+// Create a function that takes in an array of employee objects. Each employee object will come in with a property called `yearsOfExperience`.
+// Your function should return the total years of experience for all of the employees.
+
+// Class Problem #1
+
+function divisable( number ){
+    let by3 = 'Fizz'
+    let by5 = 'Buzz'
+
+    if ( number % 3 === 0 && number % 5 === 0 ){
+            return by3 + '' + by5
+    }
+    if (number % 3 === 0 ){
+        return by3
+    }
+        else if ( number % 5 === 0 ){
+            return by5
+        }
+        else{
+            return number
+        }
+        
+}
+
+console.log( divisable( 20 ));
+
+function leapyear(year) {
+    if (year % 400 === 0) {
+        return true
+    }
+    else if (year % 4 === 0 && year % 100 !== 0) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+console.log( leapyear (500));
