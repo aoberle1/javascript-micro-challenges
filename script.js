@@ -85,10 +85,12 @@ function partOfArray( array, number ){
             partialArray.push( array[i] );
         }
     }
-    return partialArray.toString();
+    // using toString to convert all values in array to a string
+    // using replaceAll to replace commas in return with spaces
+    return partialArray.toString().replaceAll(',', ' ');
 }
 
-console.log( partOfArray( [ 'Dont', 'Start', 'These', 'Three', 'Words'  ], 2 ) );
+console.log( partOfArray( [ 'Dont', 'Start', 'Print', 'These', 'Words'  ], 2 ) );
 
 let resultPartOfArray = partOfArray(["ASDF", "BLAH", "Oh!", "Hi", "There!"], 3);
 console.log(resultPartOfArray);
@@ -97,6 +99,20 @@ console.log(resultPartOfArray);
 
 // Create a function that takes in an array of employee objects. Each employee object will come in with a property called `yearsOfExperience`.
 // Your function should return the total years of experience for all of the employees.
+
+function yearsExperience( array ){
+    let totalExperience = 0;
+    for ( i = 0; i < array.length; i++ ){
+        totalExperience = totalExperience + array[i].yearsOfExperience;
+    }
+    return totalExperience;
+}
+
+console.log( 'Total experience of all of our employees is:', yearsExperience( [ 
+    { name: 'Adam', yearsOfExperience: 5 },
+    { name: 'Tuathi', yearsOfExperience: 3 },
+    { name: 'Conrad', yearsOfExperience: 6} 
+] ) );
 
 // Class Problem #1
 
