@@ -78,12 +78,14 @@ console.log(resultAddEnds);
 // the index of the number passed in through the end of the array.
 
 // creating function
-// function partOfArray( array, number ){
-//     if (number){
+function partOfArray( array, number ){
+    let partialArray = [];
+    if (number){
+        for ( i = number; i < array.length; i++ ){
+            partialArray.push( array[i] );
+        }
+    }
+    return partialArray.toString();
+}
 
-//         for ( i = number; i < array.length; i++ ){
-
-//         }
-//     }
-//     return 
-// }
+console.log( partOfArray( [ 'Dont', 'Start', 'These', 'Three', 'Words'  ], 2 ) );
