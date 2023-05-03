@@ -68,3 +68,22 @@ console.log( 'The sum of the first and last values in the array is:', addEnds( [
 // using example format to call function and console log results
 let resultAddEnds = addEnds([1, 2, 3, 4, 5]);
 console.log(resultAddEnds);
+
+// Micro Challenge Stretch #1 - Loops, Arrays, and Concatenation
+
+// Create a function that takes two parameters. The first parameter is an array, 
+// the second parameter will be a number.
+
+// Your function should return a string that combines all of the values starting at 
+// the index of the number passed in through the end of the array.
+
+// creating function
+// function partOfArray( array, number ){
+//     if (number){
+
+//         for ( i = number; i < array.length; i++ ){
+
+//         }
+//     }
+//     return 
+// }
